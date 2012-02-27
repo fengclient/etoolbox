@@ -1,0 +1,54 @@
+2012-01-03 15:10:38,766 - web2py.app.compound_interest - DEBUG - fv=
+2012-01-03 15:10:57,094 - web2py.app.compound_interest - DEBUG - fv=
+2012-01-03 15:11:01,993 - web2py.app.compound_interest - DEBUG - fv=
+2012-01-03 15:11:07,282 - web2py.app.compound_interest - DEBUG - fv=
+2012-01-03 15:11:16,773 - web2py.app.compound_interest - DEBUG - fv=1540702.15746
+2012-01-03 15:11:21,938 - web2py.app.compound_interest - DEBUG - fv=619173.64224
+2012-01-03 15:11:27,187 - web2py.app.compound_interest - DEBUG - fv=
+2012-01-03 15:25:29,507 - web2py.app.compound_interest - DEBUG - fv=
+2012-01-03 15:25:49,834 - web2py.app.compound_interest - DEBUG - fv=3115041.85344
+2012-01-03 15:26:19,911 - web2py.app.compound_interest - DEBUG - fv=619173.64224
+2012-01-03 15:26:24,280 - web2py.app.compound_interest - DEBUG - fv=619173.64224
+2012-01-03 15:36:31,513 - web2py.app.compound_interest - DEBUG - vars: 
+2012-01-03 15:36:55,920 - web2py.app.compound_interest - DEBUG - vars: 
+2012-01-03 15:45:34,703 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:45:34,703 - web2py.app.compound_interest - DEBUG - vars: 
+2012-01-03 15:45:35,934 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:45:35,936 - web2py.app.compound_interest - DEBUG - vars: 
+2012-01-03 15:46:22,756 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:46:31,289 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:46:50,854 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:46:53,818 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:46:54,687 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:46:56,282 - web2py.app.compound_interest - DEBUG - this is a test
+2012-01-03 15:48:33,384 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'fv': ''}>
+2012-01-03 15:52:36,894 - web2py.app.compound_interest - DEBUG - vars: <Storage {}>
+2012-01-03 15:52:54,134 - web2py.app.compound_interest - DEBUG - vars: <Storage {}>
+2012-01-03 15:52:54,785 - web2py.app.compound_interest - DEBUG - vars: <Storage {}>
+2012-01-03 15:52:58,378 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '1', 'fi': '1', 'pv': '1', 'fv': ''}>
+2012-01-03 16:00:46,529 - web2py.app.compound_interest - DEBUG - vars: <Storage {}>
+2012-01-03 16:01:10,917 - web2py.app.compound_interest - DEBUG - vars: <Storage {}>
+2012-01-03 16:01:17,914 - web2py.app.compound_interest - DEBUG - vars: <Storage {}>
+2012-01-03 16:03:42,085 - web2py.app.compound_interest - DEBUG - vars: <Storage {}>
+2012-01-03 16:03:58,229 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'fv': ''}>
+2012-01-03 16:03:59,757 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000.0', 'fv': '619173.64224'}>
+2012-01-03 16:04:01,084 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000.0', 'fv': '619173.64224'}>
+2012-01-03 16:04:02,105 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000.0', 'fv': '619173.64224'}>
+2012-01-07 21:08:01,082 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '', 'fi': '', 'pv': '', 'fv': ''}>
+2012-01-07 21:08:10,332 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '', 'fi': '', 'pv': '', 'fv': ''}>
+2012-01-07 21:10:53,063 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '1', 'fi': '1', 'pv': '1', 'fv': ''}>
+2012-01-07 21:10:55,105 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '1', 'fi': '1', 'pv': '1', 'fv': ''}>
+2012-01-07 21:13:52,749 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:18:06,263 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:21:16,763 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:21:18,411 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:25:45,618 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:25:50,328 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:25:51,776 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:25:52,160 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:47:25,326 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.15', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:47:33,250 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.15', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:47:49,946 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.15', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:49:59,069 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'true', 'fv': ''}>
+2012-01-07 21:51:19,540 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'undefined', 'fv': ''}>
+2012-01-07 22:01:01,673 - web2py.app.compound_interest - DEBUG - vars: <Storage {'np': '10', 'fi': '0.2', 'pv': '100000', 'invest_per_year': 'undefined', 'fv': '3115041.85344'}>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="{{=URL('static','js/compound_interest.js')}}"></script>
+</head>
+<body>
+<h1><a href="{{=URL('index')}}">复利计算器</a></h1>
+什么是复利: wikipedia,
+<a href="http://zh.wikipedia.org/wiki/%E5%A4%8D%E5%88%A9" target=_blank>zh</a>
+<a href="http://en.wikipedia.org/wiki/Compound_interest" target=_blank>en</a>
+<p>公式: <img src="http://upload.wikimedia.org/wikipedia/en/math/e/0/c/e0ca87a82c591a0e0610792963751fd5.png" /></p>
+<p>解释: 未来价值 = 当前价值  * (1+固定年收益率) ** 收益年限</p>
+
+<form id="calcform" action="{{=URL('index')}}" method="get">
+投资模式 : <input type="radio" id="invest_per_year_t" value="true" />每年定投
+<input type="radio" id="invest_per_year_f" value="false"  />一次性投入 <p/>
+当前价值(一次性投入金额/每年投入金额) : <input type="text" id="pv" /><p/>
+ 固定年收益率 : <input type="text" id="fi" /><p/>
+收益年限(投资年限) : <input type="text" id="np" /><p/>
+未来价值 (到期金额) : <input type="text" id="fv" /><p/>
+<input type="button" value="计算" onclick="return onSubmit()" /><p/>
+</form>
+</body>
+</html>

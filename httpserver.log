@@ -1,0 +1,15 @@
+127.0.0.1, 2011-12-17 18:25:42, GET, /, HTTP/1.1, 303, 0.021000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/default/index, HTTP/1.1, 200, 0.787000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/js/modernizr-1.7.min.js, HTTP/1.1, 200, 0.001000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/css/anytime.css, HTTP/1.1, 200, 0.003000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/js/anytime.js, HTTP/1.1, 200, 0.003000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/css/base.css, HTTP/1.1, 200, 0.006000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/css/superfish.css, HTTP/1.1, 200, 0.004000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/js/superfish.js, HTTP/1.1, 200, 0.001000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/js/web2py_ajax.js, HTTP/1.1, 200, 0.001000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/js/jquery.js, HTTP/1.1, 200, 0.001000
+127.0.0.1, 2011-12-17 18:25:43, GET, /welcome/static/css/handheld.css, HTTP/1.1, 200, 0.001000
+127.0.0.1, 2011-12-17 18:25:44, GET, /welcome/static/images/poweredby.png, HTTP/1.1, 200, 0.000000
+127.0.0.1, 2011-12-17 18:25:44, GET, /welcome/static/images/arrows-ffffff.png, HTTP/1.1, 200, 0.001000
+127.0.0.1, 2011-12-17 18:25:44, GET, /welcome/static/images/shadow.png, HTTP/1.1, 200, 0.001000
+127.0.0.1, 2011-12-17 18:25:45, GET, /welcome/static/favicon.ico, HTTP/1.1, 200, 0.001000
