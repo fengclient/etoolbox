@@ -1,5 +1,4 @@
 {{extend 'layout.html'}}
 <h1>BEAUTIFY</h1>
-{{=FORM(INPUT(_type='submit'), _action='', _method='post')}}
+{{=FORM(INPUT(_type='file',_name='myfile'),INPUT(_type='submit'), _action='upload', _method='post')}}
 <h2>Message is</h2>
-{{=message}}
