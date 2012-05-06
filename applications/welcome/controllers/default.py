@@ -2,68 +2,38 @@
 # this file is released under public domain and you can use without limitations
 
 #########################################################################
-## This is a samples controller
-## - index is the default action of any application
-## - user is required for authentication and authorization
-## - download is for downloading files uploaded in the db (does streaming)
-## - call exposes all registered services (none by default)
+# 短网址
 #########################################################################
+
+def get():
+    '''
+    get original url by id
+    '''
+    if hasattr(request,'vars') and 'id' in request.vars:
+        row=db(db.orig_to_short.id==request.vars.id).select(db.orig_to_short.originalurl).first()
+        if row:
+            redirect(row.originalurl)
 
 def index():
     """
     example action using the internationalization operator T and flash
     rendered by views/default/index.html or views/generic.html
     """
-    return dict(message=T('Hello World'))
+    return dict(message=T("Hello World, I'm in."))
 
-def user():
-    """
-    exposes:
-    http://..../[app]/default/user/login
-    http://..../[app]/default/user/logout
-    http://..../[app]/default/user/register
-    http://..../[app]/default/user/profile
-    http://..../[app]/default/user/retrieve_password
-    http://..../[app]/default/user/change_password
-    use @auth.requires_login()
-        @auth.requires_membership('group name')
-        @auth.requires_permission('read','table name',record_id)
-    to decorate functions that need access control
-    """
-    return dict(form=auth())
-
-
-def download():
-    """
-    allows downloading of uploaded files
-    http://..../[app]/default/download/[filename]
-    """
-    return response.download(request,db)
-
-
-def call():
-    """
-    exposes services. for example:
-    http://..../[app]/default/call/jsonrpc
-    decorate with @services.jsonrpc the functions to expose
-    supports xml, json, xmlrpc, jsonrpc, amfrpc, rss, csv
-    """
-    return service()
-
-
-@auth.requires_signature()
-def data():
-    """
-    http://..../[app]/default/data/tables
-    http://..../[app]/default/data/create/[table]
-    http://..../[app]/default/data/read/[table]/[id]
-    http://..../[app]/default/data/update/[table]/[id]
-    http://..../[app]/default/data/delete/[table]/[id]
-    http://..../[app]/default/data/select/[table]
-    http://..../[app]/default/data/search/[table]
-    but URLs bust be signed, i.e. linked with
-      A('table',_href=URL('data/tables',user_signature=True))
-    or with the signed load operator
-      LOAD('default','data.load',args='tables',ajax=True,user_signature=True)
-    """
-    return dict(form=crud())
+def convert():
+    '''
+    convert an external url to a short one with s.com
+    '''
+#    return dict(message=db().select(db.orig_to_short.ALL),
+#                orig=request.vars['orig'] if hasattr(request,'vars') and 'orig' in request.vars else None)
+    # create a short url
+    from gluon.dal import Row
+    if hasattr(request,'vars') and 'orig' in request.vars:
+        row=Row()
+        row.originalurl=request.vars.orig
+        id=db.orig_to_short.insert(**row)
+        return 'http://s.com/'+str(id) 
+    else:
+        return dict(message='"orig" is missing? try this: "http://s.com/welcome/default/convert?orig=www.baidu.com"')
+    

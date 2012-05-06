@@ -12,6 +12,8 @@ Under Windows you will probably need to add the mysql executable directory to th
 you will also need to modify mysql to mysql.exe and mysqldump to mysqldump.exe below.
 Just guessing here :)
 
+Modified: quick comment on windows platform: assign universal_newlines = True where popen() is used
+
 Access your tables with:
 legacy_db(legacy_db.mytable.id>0).select()
 
@@ -59,7 +61,8 @@ def mysql(database_name, username, password):
                           database_name],
                          stdin=subprocess.PIPE,
                          stdout=subprocess.PIPE,
-                         stderr=subprocess.PIPE)
+                         stderr=subprocess.PIPE,
+                         universal_newlines=True)
     sql_showtables, stderr = p.communicate()
     tables = [re.sub('\|\s+([^\|*])\s+.*', '\1', x) for x in sql_showtables.split()[1:]]
     connection_string = "legacy_db = DAL('mysql://%s:%s@localhost/%s')"%(username, password, database_name)
@@ -71,7 +74,10 @@ def mysql(database_name, username, password):
                               '--password=%s' % password,
                               '--skip-add-drop-table',
                               '--no-data', database_name,
-                              table_name], stdin=subprocess.PIPE, stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+                              table_name], stdin=subprocess.PIPE,
+                              stdout=subprocess.PIPE,
+                              stderr=subprocess.PIPE,
+                              universal_newlines=True)
         sql_create_stmnt,stderr = p.communicate()
         if 'CREATE' in sql_create_stmnt:#check if the table exists
             #remove garbage lines from sql statement
