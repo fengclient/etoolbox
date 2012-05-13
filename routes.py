@@ -3,6 +3,7 @@
 
 routes_in = (
   ('/convert', '/welcome/default/convert'),
+  ('/reset','/welcome/default/reset'),
   ('/$id','/welcome/default/get?id=$id')
 )
 

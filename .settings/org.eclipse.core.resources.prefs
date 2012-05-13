@@ -1,4 +1,4 @@
-#Sun May 06 15:53:18 CST 2012
+#Sun May 06 22:44:58 CST 2012
 eclipse.preferences.version=1
 encoding//applications/admin/controllers/appadmin.py=utf-8
 encoding//applications/admin/controllers/default.py=utf8
@@ -16,6 +16,7 @@ encoding//gluon/globals.py=utf-8
 encoding//gluon/html.py=utf-8
 encoding//gluon/http.py=utf-8
 encoding//gluon/main.py=utf-8
+encoding//gluon/storage.py=utf-8
 encoding//gluon/tools.py=utf-8
 encoding/modpythonhandler.py=utf-8
 encoding/router.example.py=utf-8
