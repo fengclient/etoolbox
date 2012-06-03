@@ -18,6 +18,7 @@ Memcache is also available via a different module (see gluon.contrib.memcache)
 When web2py is running on Google App Engine,
 caching will be provided by the GAE memcache
 (see gluon.contrib.gae_memcache)
+Changed: #265: catch WindowsError. 
 """
 
 import time
@@ -260,6 +261,8 @@ class CacheOnDisk(CacheAbstract):
                 try:
                     os.unlink(self.shelve_name)
                 except IOError:
+                    logger.warn('unable to delete file %s' % self.shelve_name)
+                except WindowsError:
                     logger.warn('unable to delete file %s' % self.shelve_name)
             if locker_locked:
                 portalocker.unlock(locker)
